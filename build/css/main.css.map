@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [
+    "<input css 1>"
+  ],
+  "names": [],
+  "mappings": "AAAA,wEAAwE,AACxE,UAEE,uCAA4C,AAC5C,gBAAiB,AACjB,eAAgB,AAChB,kBAAmB,AACnB,WAAe,AACf,2BAA4B,AAC5B,WAAY,AACZ,WAAa,CAAE,AAEjB,kBAGE,iBAAmB,CAAE,AAEvB,8BAJE,oCAAuC,AACvC,eAAiB,CAQA,AALnB,YAGE,gBAAiB,AACjB,WAAe,AACf,aAAe,CAAE,AAEnB,EACE,UAAe,CAAE,AACjB,QACE,UAAe,CAAE,AACnB,iBACE,UAAe,CAAE,AAErB,MAGE,gBAAiB,AACjB,kBAAmB,AACnB,yBAA0B,AAC1B,aAAe,CAAE,AACjB,sBANA,WAAY,AACZ,WAAa,CAUiB,AAL9B,gBAGE,kBAAmB,AACnB,0DAAyD,AAAzD,kDAAyD,AACzD,wBAA0B,CAAE,AAC9B,iBACE,mBAAoB,AACpB,sBAAuB,AACvB,kBAAmB,AACnB,kBAAmB,AACnB,UAAW,AACX,WAAY,AACZ,WAAa,CAAE,AACjB,SACE,cAAgB,CAAE,AACpB,QACE,kBAAmB,AACnB,qBAAsB,AACtB,sBAA0B,AAC1B,kBAAmB,AACnB,WAAa,CAAE,AACf,UACE,eAAgB,AAChB,WAAY,AACZ,YAAa,AACb,gBAAkB,CAAE,AACtB,cACE,iBAAsB,CAAE,AAC1B,eACE,iBAAsB,CAAE",
+  "file": "to.css",
+  "sourcesContent": [
+    "@import 'https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400';\nhtml,\nbody {\n  font-family: \"Open Sans\", Arial, Sans-serif;\n  font-weight: 400;\n  font-size: 20px;\n  line-height: 1.2em;\n  color: #FFFFFF;\n  font-smoothing: antialiased;\n  width: 100%;\n  height: 100%; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: Lato, Lobster, Sans-serif;\n  font-weight: 400;\n  line-height: 1.4em; }\n\n.subheading {\n  font-family: Lato, Lobster, Sans-serif;\n  font-weight: 400;\n  line-height: 2em;\n  color: #666666;\n  display: block; }\n\na {\n  color: #FFFFFF; }\n  a:hover {\n    color: #666666; }\n  a:active, a:focus {\n    color: #FFFFFF; }\n\n#home {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n  background-color: #74D9CB;\n  display: table; }\n  #home .diagonal {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    clip-path: polygon(100% 100%, 100% 100%, 100% 0%, 0% 0%);\n    background-color: #FE9DA8; }\n  #home .container {\n    display: table-cell;\n    vertical-align: middle;\n    text-align: center;\n    position: relative;\n    z-index: 2;\n    width: 100%;\n    height: 100%; }\n  #home h1 {\n    font-size: 18vw; }\n  #home a {\n    text-align: center;\n    display: inline-block;\n    border: 2px solid #FFFFFF;\n    border-radius: 50%;\n    margin: 20px; }\n    #home a i {\n      font-size: 20px;\n      width: 50px;\n      height: 50px;\n      line-height: 50px; }\n    #home a:hover {\n      border-color: #666666; }\n    #home a:active {\n      border-color: #FFFFFF; }\n\n"
+  ],
+  "sourceRoot": ""
+}

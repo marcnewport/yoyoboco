@@ -1,0 +1,44 @@
+{
+  "name": "PROJECT",
+  "version": "0.1.0",
+  "description": "PROJECT",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.1",
+    "cssnano": "^3.6.2",
+    "exorcist": "^0.4.0",
+    "imagemin": "^4.0.0",
+    "jade": "^1.11.0",
+    "node-sass": "",
+    "npm-build-tools": "^2.2.5",
+    "npm-run-all": "^1.5.1",
+    "postcss": "^5.0.10",
+    "postcss-cli": "^2.3.2",
+    "uglify-js": "^2.5.0",
+    "watch-run": "^1.2.2"
+  },
+  "scripts": {
+    "js": "browserify source/js/main.js -d -p [minifyify --map build/js/main.js.map --output build/js/main.js.map --uglify] > build/js/main.js",
+    "watch:js": "watch-run -p 'source/js/*.js' npm run js",
+    "sass": "node-sass source/sass/main.scss --compress --mangle | postcss --use autoprefixer --use cssnano --map | exorcist build/css/main.css.map > build/css/main.css",
+    "watch:sass": "watch-run -p 'source/sass/**' npm run sass",
+    "jade": "jade source/index.jade -o build/ --pretty",
+    "watch:jade": "watch-run -p 'source/*.jade,source/templates/*.jade' npm run jade",
+    "preassets": "n-clean build/assets/**",
+    "assets": "n-copy --source source/assets --destination build/assets \"*\"",
+    "postassets": "chmod -Rf 777 build/assets",
+    "serve": "browser-sync start --server --startPath \"build/index.html\" --files \"build/**\"",
+    "dev": "npm-run-all --parallel serve watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcnewport/PROJECT"
+  },
+  "author": "marcnewport@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcnewport/PROJECT/issues"
+  },
+  "homepage": "PROJECT"
+}
