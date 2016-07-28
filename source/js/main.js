@@ -1,7 +1,7 @@
-var utils = require('./utils');
+// var utils = require('./utils');
 var home = require('./home');
 
-utils();
+// utils();
 
 (function($) {
 
@@ -11,11 +11,15 @@ utils();
 
     'use strict';
 
-    // home();
+    home();
 
   });
 
-}(jQuery));
+  // global.svgElement = function(tagName) {
+  //   return document.createElementNS('http://www.w3.org/2000/svg', tagName);
+  // }
+
+})(jQuery);
 
 // Analytics code
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

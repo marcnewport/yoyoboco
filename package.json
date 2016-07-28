@@ -1,7 +1,7 @@
 {
-  "name": "PROJECT",
+  "name": "yoyoboco",
   "version": "0.1.0",
-  "description": "PROJECT",
+  "description": "Holding site for yoyoboco",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "browser-sync": "^2.11.1",
@@ -10,7 +10,8 @@
     "exorcist": "^0.4.0",
     "imagemin": "^4.0.0",
     "jade": "^1.11.0",
-    "node-sass": "",
+    "minifyify": "^7.3.3",
+    "node-sass": "^3.8.0",
     "npm-build-tools": "^2.2.5",
     "npm-run-all": "^1.5.1",
     "postcss": "^5.0.10",
@@ -33,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcnewport/PROJECT"
+    "url": "https://github.com/marcnewport/yoyoboco"
   },
   "author": "marcnewport@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marcnewport/PROJECT/issues"
+    "url": "https://github.com/marcnewport/yoyoboco/issues"
   },
-  "homepage": "PROJECT"
+  "homepage": "http://yoyoboco.com"
 }
