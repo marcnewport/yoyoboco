@@ -31,7 +31,7 @@
     "postassets": "chmod -Rf 777 build/assets",
     "serve": "browser-sync start --server --startPath \"build/index.html\" --files \"build/**\"",
     "dev": "npm-run-all --parallel serve watch:*",
-    "build": "npm-run-all js sass jade assets"
+    "build": "npm-run-all js sass jade"
   },
   "repository": {
     "type": "git",
